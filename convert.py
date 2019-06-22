@@ -35,4 +35,4 @@ for it1,it2 in zip(qst,ans):
             ques+=its["text"]
         questions.append(ques)
         answers.append(ans)
-df.append(pd.DataFrame({"question":questions,"answer":answers}))
+df=df.append(pd.DataFrame({"question":questions,"answer":answers}))
